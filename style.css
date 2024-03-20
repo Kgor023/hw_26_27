@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #203743;
+}
+
+.time {
+  width: 524px;
+  display: flex;
+  gap: 40px;
+  margin: 55px auto;
+  color: aliceblue;
+  font-size: 50px;
+}
+.time_block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  
+}
+.time_text {
+  font-size: 20px;
+}
+:is(.time_h, .time_m, .time_s, .time_ms) {
+    width: 60px;
+  display: flex;
+justify-content: center;
+  border-bottom: 2px solid aliceblue;
+  font-size: 55px;
+}
+.buttons {
+  display: flex;
+
+}
+:is(.save, .start, .reverse, .clear, .clearAll, .reset) {
+  border: 1px solid rgb(98, 98, 98);
+  border-radius: 10px;
+  padding: 10px 20px;
+  display: block;
+  margin: 0 auto;
+  background-color: #65465a;
+  color: aliceblue;
+  font-size: 20px;
+  cursor: pointer;
+}
+:is(.save, .start, .reverse, .clear, .clearAll, .reset):active {
+background-color: antiquewhite;
+color: black;
+  }
+.history {
+  width: 400px;
+  height: 300px;
+  margin: 50px auto 0;
+  background-color: whitesmoke;
+  border: 1px solid black;
+  padding: 50px;
+overflow-y: scroll;
+font-size: 23px;
+}
+.hidden {
+  display: none;
+}
+.start{
+    width: 120px ;
+}
